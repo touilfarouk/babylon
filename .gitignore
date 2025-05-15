@@ -1,0 +1,7 @@
+/server/node_modules
+/client/node_modules
+/yarn.lock
+/server/uploads
+/AttachementsFiles
+/ImageRealisation
+/marcheFiles

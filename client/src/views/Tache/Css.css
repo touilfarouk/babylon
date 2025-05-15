@@ -1,0 +1,22 @@
+.p-inputnumber-input{
+    padding:4px !important;
+    margin-left: 10px;
+  }
+  .p-dropdown-label{
+    padding:2px !important;
+    margin-left: 10px;
+  }
+.p-inputtext{
+  padding:2px !important;
+  margin-left: 9px;
+}
+.p-datepicker-trigger
+{
+  padding:2px !important;
+  background-color: rgb(113, 198, 209);
+}
+.p-multiselect-label
+{padding:2px !important;
+  margin-left: 10px;}
+
+

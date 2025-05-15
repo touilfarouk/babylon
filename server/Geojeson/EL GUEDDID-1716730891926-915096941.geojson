@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "EL GUEDDID",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "OID_": 0, "Name": "تثبيت الكثبان الرملية 200 هكتار - القديد", "FolderPath": "تثبيت الكثبان الرملية - سيدي بايزيد 200 هكتار.kmz/تثبيت الكثبان الرملية 200 هكتار - القديد", "SymbolID": 0, "AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "Snippet": null, "PopupInfo": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\" xmlns:msxsl=\"urn:schemas-microsoft-com:xslt\">\n<head>\n<META http-equiv=\"Content-Type\" content=\"text/html\">\n<meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n</head>\n<body style=\"margin:0", "Shape_Leng": 0.05309539616, "Shape_Area": 0.000196952 }, "geometry": { "type": "MultiPolygon", "coordinates": [ [ [ [ 2.75717, 34.7718, 90.0 ], [ 2.75007, 34.76915, 90.0 ], [ 2.74285, 34.76812, 90.0 ], [ 2.73803, 34.77289, 90.0 ], [ 2.73859, 34.77627, 90.0 ], [ 2.74382, 34.78054, 90.0 ], [ 2.74681, 34.78157, 90.0 ], [ 2.74951, 34.78216, 90.0 ], [ 2.75267, 34.78198, 90.0 ], [ 2.75437, 34.77969, 90.0 ], [ 2.75631, 34.7776, 90.0 ], [ 2.75796, 34.77558, 90.0 ], [ 2.75717, 34.7718, 90.0 ] ] ] ] } }
+]
+}

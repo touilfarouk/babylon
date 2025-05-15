@@ -1,0 +1,34 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "backend barrage vert",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index"
+  },
+  "author": "BOUNAB",
+  "license": "ISC",
+  "dependencies": {
+    "argon2": "^0.31.1",
+    "axios": "^1.5.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "date-fns": "^2.30.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-fileupload": "^1.4.0",
+    "fs": "^0.0.1-security",
+    "fs-extra": "^11.1.1",
+    "http": "^0.0.1-security",
+    "jsonwebtoken": "^9.0.0",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^3.4.0",
+    "node-fetch": "^3.3.2",
+    "nodemailer": "^6.9.4",
+    "nodemon": "^2.0.22",
+    "path": "^0.12.7",
+    "socket.io": "^4.6.2",
+    "uuid": "^9.0.0"
+  }
+}

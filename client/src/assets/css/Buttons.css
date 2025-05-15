@@ -1,0 +1,106 @@
+.Button_mf.clicked {
+  background-color: #28a745;
+  box-shadow: 0px 0px 15px rgba(3, 182, 12, 0.877) !important;
+  color: #fff !important;
+}
+.Button_mp.clicked {
+  background-color: #28a745;
+  box-shadow: 0px 0px 15px rgba(3, 182, 12, 0.877) !important;
+  color: #fff !important;
+}
+.Button_mp:focus {
+  background-color: #28a745;
+}
+.Button_mf:focus {
+  background-color: #28a745;
+}
+.Button_mp:hover {
+  background-color: #28a745 !important;
+  color: #fff !important;
+}
+.Button_mf:hover {
+  background-color: #28a745 !important;
+  color: #fff !important;
+}
+.Button_mf,
+.Button_mp {
+
+  width: 39%;
+  background-color: #cccccc;
+  color: black;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+
+}
+.Button_mfg,
+.Button_mpg {
+  /* Styles de base pour le bouton */
+  width: 100%;
+  background-color: #cccccc !important;
+
+  color: black;
+  height: 60px;
+  border: none;
+  cursor: pointer;
+}
+.Button_mfg.clicked {
+  background-color: #28a745 !important;
+  box-shadow: 0px 0px 15px rgba(3, 182, 12, 0.877) !important;
+  color: #fff !important;
+}
+.Button_mpg.clicked {
+  background-color: #28a745 !important;
+  box-shadow: 0px 0px 15px rgba(3, 182, 12, 0.877) !important;
+  color: #fff !important;
+}
+.Button_mpg:focus {
+  background-color: #28a745;
+}
+.Button_mfg:focus {
+  background-color: #28a745;
+}
+.Button_mpg:hover {
+  background-color: #28a745 !important;
+  color: #fff !important;
+}
+.Button_mfg:hover {
+  background-color: #28a745 !important;
+  color: #fff !important;
+}
+
+/**********************/
+.Button_af.clicked {
+  background-color: #28a745;
+  box-shadow: 0px 0px 15px rgba(3, 182, 12, 0.877) !important;
+  color: #fff !important;
+}
+.Button_ap.clicked {
+  background-color: #28a745;
+  box-shadow: 0px 0px 15px rgba(3, 182, 12, 0.877) !important;
+  color: #fff !important;
+}
+.Button_ap:focus {
+  background-color: #28a745;
+}
+.Button_af:focus {
+  background-color: #28a745;
+}
+.Button_ap:hover {
+  background-color: #28a745 !important;
+  color: #fff !important;
+}
+.Button_af:hover {
+  background-color: #28a745 !important;
+  color: #fff !important;
+}
+.Button_af,
+.Button_ap {
+  /* Styles de base pour le bouton */
+  width: 39%;
+  background-color: #cccccc;
+  color: black;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+}

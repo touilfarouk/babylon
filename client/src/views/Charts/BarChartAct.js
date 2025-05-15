@@ -1,0 +1,88 @@
+import React, { useState, useEffect } from "react";
+import { Bar } from "react-chartjs-2";
+import styles from "./Chart.module.css";
+import { BarchartAct } from "../../utils/APIRoutes";
+
+const BarChartAct = (props) => {
+  const [apiData, setApiData] = useState(null);
+  const token = localStorage.getItem("token");
+  //..
+  useEffect(() => {
+    fetch(BarchartAct, {
+      method: "POST",
+      credentials: "include",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${token}`,
+      },
+      body: JSON.stringify({
+        selectedAction: props.selectedAction,
+        selectedMarche: props.detailMarche,
+        buttonType: props.buttonType,
+      }),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        if (data.length > 0) {
+          setApiData(data);
+        } else {
+          setApiData(null);
+          console.log("ApiData", apiData);
+        }
+      })
+      .catch((error) => {
+        console.log("Error:", error);
+      });
+  }, [props.selectedAction,props.detailMarche,props.buttonType]);
+  //..
+  const barChartData = {
+    labels: apiData?.map((item) => item.wilaya) || [],
+    datasets: [
+      {
+        label: "Taux de réalisation des travaux pour l'action sélectionnée %",
+        backgroundColor: "#008000",
+        data: apiData?.map((item) => item.volumeTotal) || [],
+      },
+    ],
+  };
+  const barChartOptions = {
+    maintainAspectRatio: false,
+    title: {
+      display: true,
+      text: "Status des études (en pourcentage)",
+      fontSize: 14,
+    },
+    legend: {
+      display: true,
+      position: "top",
+    },
+    scales: {
+      x: {
+        ticks: {
+          autoSkip: false,
+          maxRotation: 45,
+          minRotation: 0,
+        },
+      },
+      y: {
+        beginAtZero: true,
+        max: 100, // Y-axis goes up to 100
+        ticks: {
+          stepSize: 20, // Set step size to 20
+          callback: function (value) {
+            return value + "%"; // Add '%' symbol to the labels
+          },
+        },
+      },
+    },
+  };
+  const barChart = (
+    <div className={styles.chartContainer} style={{ height: 232, width: 470 }}>
+      <Bar data={barChartData} options={barChartOptions} />
+    </div>
+  );
+  return <div className={styles.container}>{barChart}</div>;
+};
+
+export default BarChartAct;
